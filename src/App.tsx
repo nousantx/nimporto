@@ -1,5 +1,6 @@
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import Project from "./components/Project";
 import styler from "./utils/styler";
 
 function App() {
@@ -8,8 +9,8 @@ function App() {
   return (
     <>
       <Navbar />
-      <section className="center flex-wrap gap-2rem w-full h-mn-100vh ph-10vw">
-        <header className="fx-400px flex col jc-center w-mx-600px">
+      <section className="center flex-wrap jc-start gap-2rem w-full h-mn-100vh ph-10vw">
+        <header className="flex col jc-center w-mx-600px">
           <p className="ls-1px">Hello Everyone 👋</p>
           <h1 className="fs-2rem fw-400 tc-[neutral-600]">
             I'm <span className="fw-600 tc-[neutral-900]">NOuSantx</span>. I'm{" "}
@@ -29,44 +30,31 @@ function App() {
             </a>
           </div>
         </header>
-        {/* <div className="fx-400px relative pv-10vw"></div> */}
+        {/* <div className="relative pv-10vw"></div> */}
       </section>
-      <section className="dark center col back-c-#0d0d0d tc-[neutral-100] w-full p-10vw">
+      <section className="center col w-full ph-10vw pv-2rem bg-#0d0d0d dark">
+        <h2 className="w-mx-600px">
+          About <span className="tc-[primary-500]">Me</span>
+        </h2>
+      </section>
+      <section className="center col w-full p-10vw bg-[neutral-100]">
         <header className="ta-center">
           <h2>Projects</h2>
-          <p className="tc-[neutral-300]">
-            Explore my featured works, website and design.
-          </p>
+          <p>Explore my featured works, website and design.</p>
         </header>
-        <div className="w-full flex-wrap ai-stretch gap-1rem mt-1rem">
-          <div className="fx-300px bs-solid bw-1px bc-[neutral-900] bg-none br-0.5rem over-hidden">
-            <div className="w-full bg-[primary-500] ratio-video"></div>
-            <header className="p-1rem">
-              <h3 className="fs-1.2rem">TenoxUI CSS Framework</h3>
-              <p className="fs-12px mt-6px">
-                An utility-first CSS framework for web development, maintained
-                by myself.
-              </p>
-            </header>
-            <div className="center flex-wrap gap-8px jc-end ph-1rem pv-1rem">
-              <a
-                href="#"
-                className="btn center bg-[primary-500] tc-[neutral-900] rounded-full gap-4px"
-              >
-                <i className="txi ti-web"></i>
-                Docs
-              </a>
-              <a
-                href="#"
-                className="btn center bg-[primary-500] tc-[neutral-900] rounded-full gap-4px"
-              >
-                <i className="txi ti-github_square"></i>
-                GitHub
-              </a>
-            </div>
-          </div>
-          <div className="fx-300px bg-red p-1rem"></div>
-          <div className="fx-300px bg-red p-1rem"></div>
+        <div className="w-full flex-wrap  ai-stretch gap-1rem mt-1rem">
+          <Project
+            title="TenoxUI CSS Framework"
+            desc="An utility-first CSS framework for web development, maintained by myself."
+            thumb="https://repository-images.githubusercontent.com/726043678/0c04e550-aebf-41d5-a0c6-ff594d15cdea"
+            tags={["html/css", "framework", "typescript"]}
+          />
+          <Project
+            title="TenoxUI CSS Framework"
+            desc="An utility-first CSS framework for web development, maintained by myself."
+            thumb="https://tenoxui.web.app/img/tenoxui.svg"
+          />
+          <Project title="Hello World!" />
         </div>
       </section>
       <Footer />

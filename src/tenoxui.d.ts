@@ -19,7 +19,7 @@ declare module "tenoxui" {
   // Define the makeTenoxUI class
   export class makeTenoxUI {
     constructor(element: HTMLElement);
-    applyStyle(type: string, value: string, unit: string): void;
+    applyStyle(type: string, value: string | HTMLElement, unit: string): void;
     applyStyles(className: string): void;
     applyMultiStyles(styles: string): void;
   }

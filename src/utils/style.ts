@@ -8,6 +8,8 @@ export const styles = {
     bc: "borderColor",
     sca: "scale",
     rta: "rotate",
+    "td-c": "textDecorationColor",
+    "td-s": "textDecorationStyle",
     "back-c": "backgroundColor",
     px: ["paddingLeft", "paddingRight"],
   },
@@ -23,7 +25,10 @@ export const styles = {
     // tag style
     body: "back-c-[neutral-100] tc-[neutral-900]",
     p: "tc-[neutral-800]",
-    ".dark p": "tc-[neutral-400]",
+    ".dark": {
+      "": "tc-[neutral-100]",
+      p: "tc-[neutral-400]",
+    },
     a: "td-none",
     // Components
     ".btn":
@@ -49,6 +54,11 @@ export const styles = {
    */
   hover: {
     ".btn": ["sca-1", "sca-0.98", "tr-prop-all tr-time-0.3s tr-timing-ease"],
+    ".project-link": [
+      "bc-transparent",
+      "bc-[primary-500] bs-solid bw-bottom-1px",
+      "bs-solid bw-0 bc-transparent bw-bottom-1px tr-prop-all tr-time-0.3s tr-timing-ease",
+    ],
     ".btn.btn-primary": [
       "back-c-transparent bc-[neutral-900] tc-[neutral-900]",
       "back-c-[neutral-900] bc-transparent tc-[primary-500]",
