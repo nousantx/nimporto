@@ -1,5 +1,5 @@
 import { useLayoutEffect } from "react";
-import tenoxui, { defineProps, makeStyles } from "tenoxui";
+import tenoxui, { applyHovers, defineProps, makeStyles } from "tenoxui";
 import { styles } from "./style";
 
 type Hooks = () => void;
@@ -10,7 +10,9 @@ export default function styler(...hooks: Hooks[]) {
     defineProps(styles.props);
     // apply styles
     makeStyles(styles.css);
-    // apply color
+    // hover
+    applyHovers(styles.hover);
+    // apply tenox style
     tenoxui();
   }, [hooks]);
 }

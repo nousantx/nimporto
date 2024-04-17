@@ -1,11 +1,12 @@
 :root {
+  --tx_video: 16/9;
   /* Primary: Green of Bhabua */
   --primary-100: #f9fff2;
   --primary-200: #e8ffcb;
   --primary-300: #dbfea4;
   --primary-400: #d1fb7b;
-  /* --primary-500: #caf553; */
-  --primary-500: #ccf654;
+  --primary-500: #caf553;
+  /* --primary-500: #ccf654; */
   --primary-600: #a2c12b;
   --primary-700: #7c8e17;
   --primary-800: #535a0d;
