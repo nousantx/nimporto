@@ -24,7 +24,7 @@ const Footer = () => {
             +62 81 515 193 972
           </p>
           <p className="center gap-8px fs-14px">
-            <span className="ms-sharp tc-[primary-500] fs-16px">mail</span>
+            <span className="ms-sharp tc-[primary-500] fs-16px">pin_drop</span>
             Malang Regency, East Java, ID
           </p>
         </div>
