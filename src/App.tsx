@@ -1,14 +1,13 @@
+import Badges from "./components/Badge";
 import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
 import Project from "./components/Project";
+import { projects } from "./components/projects";
 import styler from "./utils/styler";
 
 function App() {
   styler();
-
   return (
     <>
-      <Navbar />
       <section className="center flex-wrap jc-start gap-2rem w-full h-mn-100vh ph-10vw">
         <header className="flex col jc-center w-mx-600px">
           <p className="ls-1px">Hello Everyone 👋</p>
@@ -33,28 +32,39 @@ function App() {
         {/* <div className="relative pv-10vw"></div> */}
       </section>
       <section className="center col w-full ph-10vw pv-2rem bg-#0d0d0d dark">
-        <h2 className="w-mx-600px">
-          About <span className="tc-[primary-500]">Me</span>
-        </h2>
+        <header className="ta-justify">
+          <h2>About Me</h2>
+          <p className="fs-14px tc-[neutral-400] mt-6px lh-1.4">
+            {/* About <span className="tc-[primary-500]">Me</span> */}
+            My name is Nur Ikhsan Majid a.k.a{" "}
+            <span className="tc-[neutral-100] fw-500">NOuSantx</span>. I'm a{" "}
+            <span className="tc-[neutral-100] fw-500">
+              Front-End Developer, UI/UX Designer, and TenoxUI CSS Framework
+              Founder/Maintainer
+            </span>
+            . With over 2 years of experience in building responsive and dynamic
+            frontend design and web application. Proficient in using front-end
+            tools such as{" "}
+            <span className="tc-[neutral-100] fw-500">
+              HTML, CSS, JavaScript, TypeScript, ReactJS, Vue, Git, and More
+            </span>
+            . Solving problems and creating user-friendly design is my
+            responsibility.
+          </p>
+        </header>
+        <div className="w-full flex-wrap gap-8px mt-2rem">
+          <Badges />
+        </div>
       </section>
       <section className="center col w-full p-10vw bg-[neutral-100]">
         <header className="ta-center">
           <h2>Projects</h2>
           <p>Explore my featured works, website and design.</p>
         </header>
-        <div className="w-full flex-wrap  ai-stretch gap-1rem mt-1rem">
-          <Project
-            title="TenoxUI CSS Framework"
-            desc="An utility-first CSS framework for web development, maintained by myself."
-            thumb="https://repository-images.githubusercontent.com/726043678/0c04e550-aebf-41d5-a0c6-ff594d15cdea"
-            tags={["html/css", "framework", "typescript"]}
-          />
-          <Project
-            title="TenoxUI CSS Framework"
-            desc="An utility-first CSS framework for web development, maintained by myself."
-            thumb="https://tenoxui.web.app/img/tenoxui.svg"
-          />
-          <Project title="Hello World!" />
+        <div className="w-full flex-wrap ai-stretch gap-1rem mt-1rem">
+          {projects.map((project, index) => (
+            <Project key={index} {...project} />
+          ))}
         </div>
       </section>
       <Footer />

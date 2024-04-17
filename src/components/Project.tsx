@@ -5,16 +5,24 @@ import { useLayoutEffect, useRef } from "react";
 interface ProjectProps {
   title: string;
   desc?: string;
-  // desc: string;
+  live?: string;
+  github?: string;
+  design?: string;
   thumb?: string;
-  tags?: string[]; // Define tags prop as an array of strings
+  tags?: string[];
 }
 
-const Project: React.FC<ProjectProps> = ({ title, desc, thumb, tags }) => {
+const Project: React.FC<ProjectProps> = ({
+  title,
+  desc,
+  thumb,
+  tags,
+  live,
+  github,
+  design,
+}) => {
   styler();
-
   const thumbRef = useRef<HTMLDivElement>(null);
-
   useLayoutEffect(() => {
     const element = thumbRef.current;
     if (element) {
@@ -55,26 +63,42 @@ const Project: React.FC<ProjectProps> = ({ title, desc, thumb, tags }) => {
         <p className="ta-justify fs-12px mt-6px">{desc}</p>
       </header>
       <div className="center flex-wrap gap-1rem jc-end ph-1rem pv-1rem mt-auto">
-        <a
-          href=""
-          className="project-link fs-14px center tc-[neutral-900] gap-4px"
-        >
-          <i className="txi ti-web"></i>
-          Docs
-        </a>
-        <a
-          href="#"
-          className="project-link fs-14px center tc-[neutral-900] gap-4px"
-        >
-          <i className="txi ti-github_square"></i>
-          GitHub
-        </a>
-        {/* <a href="#" className="center tc-[neutral-900]">
-          <i className="txi ti-web fs-18px"></i>
-        </a>
-        <a href="#" className="center tc-[neutral-900]">
-          <i className="txi ti-github_square fs-18px"></i>
-        </a> */}
+        {live ? (
+          <a
+            target="_blank"
+            href={live}
+            className="project-link fs-14px center tc-[neutral-900] gap-4px"
+          >
+            <i className="txi ti-web"></i>
+            Live Demo
+          </a>
+        ) : (
+          <></>
+        )}
+        {github ? (
+          <a
+            target="_blank"
+            href={github}
+            className="project-link fs-14px center tc-[neutral-900] gap-4px"
+          >
+            <i className="txi ti-github_square"></i>
+            GitHub
+          </a>
+        ) : (
+          <></>
+        )}
+        {design ? (
+          <a
+            target="_blank"
+            href={design}
+            className="project-link fs-14px center tc-[neutral-900] gap-4px"
+          >
+            <i className="ms-round fs-18px">draw</i>
+            Design
+          </a>
+        ) : (
+          <></>
+        )}
       </div>
     </div>
   );
