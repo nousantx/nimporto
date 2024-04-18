@@ -33,6 +33,10 @@ export const styles = {
     // Components
     ".btn":
       "d-block ph-14px pv-6px bdr-none back-c-transparent bc-transparent tc-[neutral-100] br-0.125rem bw-1px bs-solid fw-500 fs-14px cursor-pointer",
+    ".footer-links": {
+      "": " fx-400px d-flex fx-wrap-wrap ai-stretch gap-2rem",
+      a: "d-block tc-[neutral-300] fs-14px mt-10px",
+    },
     // reusable className
     ".flex": "d-flex",
     ".flex-wrap": "d-flex fx-wrap-wrap",
