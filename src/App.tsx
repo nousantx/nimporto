@@ -33,7 +33,9 @@ function App() {
       </section>
       <section className="center col w-full ph-10vw pv-2rem bg-#0d0d0d dark">
         <header className="ta-justify">
-          <h2>About Me</h2>
+          <h2>
+            About Me<span className="tc-[primary-500]">.</span>
+          </h2>
           <p className="fs-14px tc-[neutral-400] mt-6px lh-1.4">
             {/* About <span className="tc-[primary-500]">Me</span> */}
             My name is Nur Ikhsan Majid a.k.a{" "}
