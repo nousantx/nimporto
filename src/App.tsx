@@ -42,7 +42,7 @@ function App() {
             <span className="tc-[neutral-100] fw-500">NOuSantx</span>. I'm a{" "}
             <span className="tc-[neutral-100] fw-500">
               Front-End Developer, UI/UX Designer, and TenoxUI CSS Framework
-              Founder/Maintainer
+              Maintainer
             </span>
             . With over 2 years of experience in building responsive and dynamic
             frontend design and web application. Proficient in using front-end
