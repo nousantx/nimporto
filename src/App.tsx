@@ -31,7 +31,7 @@ function App() {
         </header>
         {/* <div className="relative pv-10vw"></div> */}
       </section>
-      <section className="center col w-full ph-10vw pv-2rem bg-#0d0d0d dark">
+      <section className="center col w-full ph-10vw pv-2rem back-c-[neutral-900] dark">
         <header className="ta-justify">
           <h2>
             About Me<span className="tc-[primary-500]">.</span>

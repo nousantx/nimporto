@@ -4,7 +4,7 @@ const Footer = () => {
   styler();
   return (
     <>
-      <footer className="back-c-#0d0d0d dark ph-10vw pv-2rem center col none">
+      <footer className="dark ph-10vw pv-2rem center col none">
         <div className="w-full flex-wrap center ai-stretch gap-2rem">
           <header className="fx-200px">
             <h2 className="fw-500 fs-1.6rem">
@@ -37,7 +37,7 @@ const Footer = () => {
           &copy; 2024 NOuSantx. Built with TenoxUI.
         </p>
       </footer>
-      <footer className="dark w-full pv-2rem ph-10vw back-c-#0d0d0d flex-wrap ai-stretch gap-2rem tc-[neutral-100]">
+      <footer className="dark w-full bg-[neutral-900] pv-2rem ph-10vw flex-wrap ai-stretch gap-3rem tc-[neutral-100]">
         {/* Row one */}
         <header className="fx-400px">
           {/* <div className="center jc-start gap-4px">
@@ -120,25 +120,25 @@ const Footer = () => {
             </a>
             <a
               target="_blank"
-              href="https://github.com/nousantx/tui-template-react"
+              href="https://github.com/nousantx/tui-template-vue"
             >
               Vue
             </a>
             <a
               target="_blank"
-              href="https://github.com/nousantx/tui-template-react"
+              href="https://github.com/nousantx/tui-template-svelte"
             >
               Svelte
             </a>
             <a
               target="_blank"
-              href="https://github.com/nousantx/tui-template-react"
+              href="https://github.com/nousantx/tui-template-solid"
             >
               Solid
             </a>
           </div>
         </div>
-        <p className="fx-100% tc-[neutral-300] fs-12px dark back-c-#0d0d0d">
+        <p className="fx-100% tc-[neutral-300] fs-12px">
           &copy; 2024 NOuSantx. Built with{" "}
           <a
             target="_blank"
@@ -153,4 +153,5 @@ const Footer = () => {
     </>
   );
 };
+
 export default Footer;
