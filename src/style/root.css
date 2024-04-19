@@ -32,5 +32,6 @@
   --neutral-600: #939393;
   --neutral-700: #6f6f6f;
   --neutral-800: #4b4b4b;
-  --neutral-900: #262622;
+  /* --neutral-900: #262622; */
+  --neutral-900: #0d0d0d;
 }

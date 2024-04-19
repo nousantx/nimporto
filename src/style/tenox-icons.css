@@ -1,7 +1,8 @@
 @font-face {
   font-family: tx-icon;
   src: url("fonts/tx-icon.eot?ma0ni9");
-  src: url("fonts/tx-icon.eot?ma0ni9#iefix") format("embedded-opentype"),
+  src:
+    url("fonts/tx-icon.eot?ma0ni9#iefix") format("embedded-opentype"),
     url("fonts/tx-icon.ttf?ma0ni9") format("truetype"),
     url("fonts/tx-icon.woff?ma0ni9") format("woff"),
     url("fonts/tx-icon.svg?ma0ni9#tx-icon") format("svg");
